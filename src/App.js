@@ -1,11 +1,17 @@
-import React from 'react'
-import './App.css'
+import React from "react";
+import { ChatEngine } from "react-chat-engine";
+import secret from './secret'
+
+import "./App.css";
 const App = () => {
   return (
-    <div>
-        Teste
-    </div>
+    <ChatEngine 
+      height="100vh"
+      projectID={secret.projectID}
+      userName={secret.user}
+      userSecret={secret.senha}
+    />
   )
-}
+};
 
-export default App
+export default App;
